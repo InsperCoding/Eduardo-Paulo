@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 816478411d1ab3b4a8f8d711bd1164e6
+guid: 432d67a57fe7cda4ca5e76b4070910ef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2972732003838732003
-    second: Sword-sheet_0
+      213: -5503886329632749075
+    second: Sword1-sheet_0
   - first:
-      213: -1403954250888977516
-    second: Sword-sheet_1
+      213: -4386200100655900250
+    second: Sword1-sheet_1
   - first:
-      213: 7162894247313786806
-    second: Sword-sheet_2
+      213: -6904365725418090714
+    second: Sword1-sheet_2
   - first:
-      213: 9169537767172651141
-    second: Sword-sheet_3
+      213: 6163361602052522667
+    second: Sword1-sheet_3
   - first:
-      213: -3073119851586173752
-    second: Sword-sheet_4
+      213: 4806061929289769764
+    second: Sword1-sheet_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,7 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sword-sheet_0
+      name: Sword1-sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -120,14 +120,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d19d1c22efbbeb6d0800000000000000
-      internalID: -2972732003838732003
+      spriteID: de98c164b844e93b0800000000000000
+      internalID: -5503886329632749075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword-sheet_1
+      name: Sword1-sheet_1
       rect:
         serializedVersion: 2
         x: 32
@@ -141,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 493ecda1c07248ce0800000000000000
-      internalID: -1403954250888977516
+      spriteID: 6a95f9e5f361123c0800000000000000
+      internalID: -4386200100655900250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword-sheet_2
+      name: Sword1-sheet_2
       rect:
         serializedVersion: 2
         x: 64
@@ -162,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b7c3d60e56b76360800000000000000
-      internalID: 7162894247313786806
+      spriteID: 62f821124f3ce20a0800000000000000
+      internalID: -6904365725418090714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword-sheet_3
+      name: Sword1-sheet_3
       rect:
         serializedVersion: 2
         x: 96
@@ -183,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 588bad6540eb04f70800000000000000
-      internalID: 9169537767172651141
+      spriteID: ba28f90e8b8a88550800000000000000
+      internalID: 6163361602052522667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword-sheet_4
+      name: Sword1-sheet_4
       rect:
         serializedVersion: 2
         x: 128
@@ -204,8 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c4410ee6c51a55d0800000000000000
-      internalID: -3073119851586173752
+      spriteID: 42368df6cdf82b240800000000000000
+      internalID: 4806061929289769764
       vertices: []
       indices: 
       edges: []

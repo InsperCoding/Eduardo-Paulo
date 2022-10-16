@@ -10,11 +10,9 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public Camera cam;
     public Transform sword;
+    public Sprite[] spriteArray;
     
     private SpriteRenderer spriteRenderer;
-
-    public Sprite[] spriteArray;
-
     private Vector2 movement;
     private Vector2 mousePos;
 
@@ -41,8 +39,6 @@ public class PlayerMovement : MonoBehaviour
 
         Vector2 lookDir = mousePos - rb.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
-        // rb.rotation = angle;
-        // print(angle);
         int animationIdx = ChangeSprite(angle);
         int walkIdx = 0;
         bool moving = false;
