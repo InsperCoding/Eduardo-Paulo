@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     public Camera cam;
+    public Transform sword;
     
     private SpriteRenderer spriteRenderer;
 
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+
     }
 
     // Update is called once per frame
@@ -66,24 +68,25 @@ public class PlayerMovement : MonoBehaviour
             walkIdx = 0;
         }
 
-
         animator.SetInteger("AnimationIdx", animationIdx);
         animator.SetInteger("WalkIdx", walkIdx);
         animator.SetBool("Moving",moving);
-
-
            
     }
 
     int ChangeSprite(float angle)
     {
         transform.localScale = new Vector3(1,transform.localScale.y,transform.localScale.z);
+        sword.localScale = new Vector3(1,sword.localScale.y,sword.localScale.z);
+
         if (-22.5 < angle && angle < 22.5) { 
             transform.localScale = new Vector3(-1,transform.localScale.y,transform.localScale.z);
+            sword.localScale = new Vector3(-1,sword.localScale.y,sword.localScale.z);
             return 0;
             
         } else if (22.5 < angle && angle < 67.5) {
             transform.localScale = new Vector3(-1,transform.localScale.y,transform.localScale.z); 
+            sword.localScale = new Vector3(-1,sword.localScale.y,sword.localScale.z);
             return 1;
        
         } else if (67.5 < angle && angle < 112.5) { 
