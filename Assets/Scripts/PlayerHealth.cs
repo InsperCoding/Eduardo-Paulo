@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int health;
+    public int currentHealth;
     public int numOfHearts;
     public Image[] hearts;
     public Sprite fullHeart;
@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
     {   
         for(int i=0; i <hearts.Length; i++)
         {
-            if (i < health){
+            if (i < currentHealth){
                 hearts[i].sprite = fullHeart;
             } else {
                 hearts[i].sprite = emptyHeart;
@@ -27,6 +27,15 @@ public class PlayerHealth : MonoBehaviour
                 hearts[i].enabled = true;
             } else {
                 hearts[i].enabled = false;
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.tag == "Enemy"){
+            currentHealth--;
+            if(currentHealth <= 0){
+                Destroy(gameObject);
             }
         }
     }
