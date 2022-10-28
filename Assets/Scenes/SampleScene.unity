@@ -1032,6 +1032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
+  player: {fileID: 1406668551}
 --- !u!114 &1558948072
 MonoBehaviour:
   m_ObjectHideFlags: 0
